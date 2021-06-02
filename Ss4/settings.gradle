@@ -1,0 +1,2 @@
+rootProject.name = "Ss4"
+include ':app'

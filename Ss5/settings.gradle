@@ -1,0 +1,2 @@
+rootProject.name = "Ss5"
+include ':app'
