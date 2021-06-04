@@ -1,0 +1,2 @@
+rootProject.name = "As5RecyclerView"
+include ':app'
