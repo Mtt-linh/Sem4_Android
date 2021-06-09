@@ -1,4 +1,4 @@
-package com.example.ss6recyclerview;
+  package com.example.ss6recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
