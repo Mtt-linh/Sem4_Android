@@ -55,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onResponse(Call<List<Weather>> call, Response<List<Weather>> response) {
-                if (response.body() == null) return;
+                if (response.body()!=null) {
                     List<Weather> listWeather = response.body();
                     WeatherAdapter adapter = new WeatherAdapter(MainActivity.this, listWeather);
                     rvHour.setAdapter(adapter);
                     Weather weather = listWeather.get(0);
                     tvTem.setText(weather.getTemItem().getValue().intValue() + "0");
                     tvStatus.setText(weather.getIconTem());
+                }
 
             }
 
