@@ -8,6 +8,13 @@
     android:paddingLeft="65dp"
     android:paddingTop="18dp"
     android:paddingRight="65dp"
+    tools:context=".activity.MainActivity"
     >
+    <ListView
+        android:id="@+id/lvUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 
 </RelativeLayout>

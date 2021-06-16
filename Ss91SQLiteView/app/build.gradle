@@ -36,5 +36,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    
+    // https://mvnrepository.com/artifact/com.tbruyelle.rxpermissions2/rxpermissions
+    implementation group: 'com.tbruyelle.rxpermissions2', name: 'rxpermissions', version: '0.9.4'
+
 }
