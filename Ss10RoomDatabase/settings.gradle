@@ -1,0 +1,2 @@
+rootProject.name = "Ss10 Room Database"
+include ':app'

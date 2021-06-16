@@ -1,0 +1,2 @@
+rootProject.name = "Ss9.1 SQLite View"
+include ':app'
