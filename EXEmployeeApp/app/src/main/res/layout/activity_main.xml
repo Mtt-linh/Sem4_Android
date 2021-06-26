@@ -1,18 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity"
+    android:background="#000">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:text="Employee App"
+        android:gravity="center"
+        android:layout_weight="16.77" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#fff"
+        android:layout_margin="5sp">
+        <EditText
+            android:text=""
+            android:layout_width="match_parent"
+            android:hint="Enter Employee name"
+            android:layout_height="wrap_content"
+            android:id="@+id/edEmployeeName"
+            android:layout_weight=".78"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="5sp">
+        <EditText
+            android:text=""
+            android:layout_width="match_parent"
+            android:hint="Enter Designation"
+            android:layout_height="wrap_content"
+            android:id="@+id/edDesignation"
+            android:layout_weight=".78"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="5sp">
+        <EditText
+            android:text=""
+            android:hint="Enter Salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSalary"
+            android:layout_weight=".78"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add"
+            android:layout_height="60dp"
+            android:layout_width="140dp"
+            android:textSize="11sp"
+            android:text="Add Employee"
+            android:layout_margin="5sp"
+            android:backgroundTint="#B1B1B1" />
+        <Button
+            android:id="@+id/update"
+            android:layout_height="60dp"
+            android:layout_width="140dp"
+            android:textSize="11sp"
+            android:layout_margin="5sp"
+            android:text="Update Record"
+            android:backgroundTint="#B1B1B1" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_height="60dp"
+            android:layout_width="90dp"
+            android:layout_margin="5sp"
+            android:textSize="11sp"
+            android:text="Delete "
+            android:backgroundTint="#B1B1B1" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcListEmployee"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
